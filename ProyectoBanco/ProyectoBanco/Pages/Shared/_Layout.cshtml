@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProyectoBanco</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div id="padre">
+            <div id="logo">
+                <img src="" width=70px height=70px>
+                <h3>INTERBCP</h3>
+            </div>
+            <div id="navegador">
+                <nav>
+                    <ul>
+                        <li> <a href="#">Inicio</a></li>
+                        <li> <a href="#">Sobre Nosotros</a></li>
+                        <li>
+                            <a href="#">Mi Cuenta</a>
+                            <ul class="submenu">
+                                <li><a href="#">Iniciar Sesión</a></li>
+                                <li><a href="#">Crear Cuenta</a></li>
+                                <li><a href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

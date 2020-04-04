@@ -1,0 +1,170 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+#padre {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(8, 86, 175);
+    background-color: white;
+}
+
+#logo img {
+    margin-left: 20px;
+}
+
+#logo {
+    width: 35%;
+    display: flex;
+}
+
+h3 {
+    margin-top: 25px;
+    color: rgb(8, 86, 175);
+}
+
+#navegador {
+    width: 65%;
+}
+
+#navegador a {
+    color: rgb(8, 86, 175);
+    display: block;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#navegador a:hover {
+    background-color: rgb(80, 155, 239);
+    color: white;
+}
+
+#navegador ul {
+    list-style: none;
+    display: flex;
+}
+
+#navegador li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#navegador li:hover .submenu > li {
+    display: block;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+/*CSS PARA EL SLIDER*/
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite; /*Indica el tiempo de cada slide*/
+    animation-direction: alternate; /*Cuando termina la animacion regresa*/
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+#presentacion {
+    height: 350px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primero {
+    width: 70%;
+    justify-content: center;
+    padding: 5px 30px;
+}
+
+.primero h3 {
+    -webkit-text-stroke: 2px rgb(10,150,183); /*Este de aca es el color del borde de las letras*/
+    -webkit-text-fill-color: rgb(138,190,175); /*Este de aca es el color de relleno*/
+    font-size: 25px;
+}
+
+.segundo {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#cuadro {
+    background-color: rgb(70, 137, 182);
+    height: 350px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuadro img {
+    height: 90%;
+    width: 75%;
+    box-sizing: border-box;
+}
